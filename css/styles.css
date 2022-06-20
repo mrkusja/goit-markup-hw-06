@@ -632,6 +632,61 @@ max-width: 1600px;
     background-color: var(--accent-color);
 }
 
+.footer-right-side {
+    margin-right: 93px;
+}
+
+.footer-subcribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-subcribe-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.footer-subcribe-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-button {
+    min-width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: #188CE8;
+}
+
+.footer-subscribe-button-icon {
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
  /* ===============MODAL=============== */
 .backdrop {
     position: fixed;
@@ -657,6 +712,7 @@ max-width: 1600px;
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 40px;
     background-color: #FFFFFF;
 
 }
@@ -679,6 +735,166 @@ max-width: 1600px;
 
 .modal-btn-close-icon {
     fill: #000000;
+}
+
+.modal-btn-close:hover .modal-btn-close-icon,
+.modal-btn-close:focus .modal-btn-close-icon {
+    fill: var(--accent-color);
+}
+
+.modal-contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-contacts-form-title {
+    margin-bottom: 12px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-contacts-form-field {
+    margin-bottom: 10px;
+}
+
+.modal-contacts-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-contacts-form-field-key {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--sections-text-color);
+}
+
+.modal-contacts-form-wrapper {
+    position: relative;
+    display: block;
+}
+
+.modal-contacts-form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contacts-form-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.modal-contacts-form-input:focus + .modal-contacts-form-icon {
+    fill: #2196F3;
+}
+
+.modal-contacts-form-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contacts-form-message:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.modal-contacts-form-message::placeholder {
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-contacts-form-checkbox-lable::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.modal-contacts-form-checkbox:checked + .modal-contacts-form-checkbox-lable::before {
+    background-color: #2196F3;
+    border: none;
+}
+
+.modal-contacts-form-checkbox:focus + .modal-contacts-form-checkbox-lable::before {
+    border-color: #2196F3;
+}
+
+.modal-contacts-form-checkbox-lable {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.modal-contacts-form-checkbox-icon {
+    fill: transparent;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 7px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contacts-form-btm {
+    min-width: 200px;
+    align-self: center;
+    padding: 10px 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--modal-btn-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+    transition: background-color var(--transition-data);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-contacts-form-btm:hover,
+.modal-contacts-form-btm:focus {
+    background-color: var(--modal-btn-background-hover-color);
+}
+
+.modal-form-rules-link {
+    color: var(--accent-color);
 }
 
  /* ===============PORTFOLIO=============== */
