@@ -246,7 +246,7 @@ max-width: 1600px;
 }
 
 .hero-title {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -598,6 +598,7 @@ max-width: 1600px;
  }
 
  .footer-left-side {
+     flex-grow: 1;
      margin-right: 70px;
  }
 
@@ -762,6 +763,10 @@ max-width: 1600px;
     margin-bottom: 10px;
 }
 
+.modal-contacts-form-field-last {
+    margin-bottom: 20px;
+}
+
 .modal-contacts-form-input {
     width: 100%;
     height: 40px;
@@ -806,6 +811,7 @@ max-width: 1600px;
 }
 
 .modal-contacts-form-message {
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -850,6 +856,7 @@ max-width: 1600px;
 
 .modal-contacts-form-checkbox-lable {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
