@@ -772,7 +772,6 @@ max-width: 1600px;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -803,11 +802,11 @@ max-width: 1600px;
 
 .modal-contacts-form-input:focus {
     outline: none;
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 
 .modal-contacts-form-input:focus + .modal-contacts-form-icon {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .modal-contacts-form-message {
@@ -823,7 +822,7 @@ max-width: 1600px;
 
 .modal-contacts-form-message:focus {
     outline: none;
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 
 .modal-contacts-form-message::placeholder {
@@ -846,12 +845,16 @@ max-width: 1600px;
 }
 
 .modal-contacts-form-checkbox:checked + .modal-contacts-form-checkbox-lable::before {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     border: none;
+    background-image: url(../images/modal/vector.svg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: 50% 50%;
 }
 
 .modal-contacts-form-checkbox:focus + .modal-contacts-form-checkbox-lable::before {
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 
 .modal-contacts-form-checkbox-lable {
